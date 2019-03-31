@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SignUp">
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -46,8 +47,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Email"
-                        android:inputType="text"
-                        android:textColor="@color/Merah" />
+                        android:inputType="text" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -68,26 +68,46 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Password"
-                        android:inputType="textPassword"
-                        android:textColor="@color/Merah" />
+                        android:inputType="textPassword" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/RePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/Password"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_lock_black_24dp" />
+
+                    <EditText
+                        android:id="@+id/etRePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Re-type Password"
+                        android:inputType="textPassword" />
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tvSignUp"
+                    android:id="@+id/tvSignIn"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:layout_below="@+id/Password"
+                    android:layout_below="@+id/RePassword"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="100dp"
-                    android:text="Don't Have Any Account ?. SignUp Here" />
+                    android:layout_marginTop="30dp"
+                    android:text="Have Any Account ?. SignIn Here" />
 
                 <Button
-                    android:id="@+id/btnSignIn"
+                    android:id="@+id/btnSignUp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_below="@+id/tvSignUp"
+                    android:layout_below="@+id/tvSignIn"
                     android:background="@drawable/rounded_corner"
-                    android:text="Sign In"
+                    android:text="Sign Up"
                     android:textColor="@color/Putih"
                     android:layout_marginBottom="30dp"/>
             </RelativeLayout>

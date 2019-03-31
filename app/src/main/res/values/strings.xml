@@ -11,4 +11,16 @@
     <string name="title_activity_customer_dashboard">CustomerDashboard</string>
     <string name="title_activity_owner_dashboard">OwnerDashboard</string>
     <string name="title_activity_waiter_dashboard">WaiterDashboard</string>
+
+    <array name="privilage">
+        <item>Sign Up As</item>
+        <item>Admin</item>
+        <item>Cashier</item>
+        <item>Customer</item>
+        <item>Owner</item>
+        <item>Waiter</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
