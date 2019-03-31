@@ -13,7 +13,7 @@
     <string name="title_activity_waiter_dashboard">WaiterDashboard</string>
 
     <array name="privilage">
-        <item>Sign Up As</item>
+        <item>Select Privileges</item>
         <item>Admin</item>
         <item>Cashier</item>
         <item>Customer</item>

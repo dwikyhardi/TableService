@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 if (user != null) {
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                     startActivity(new Intent(MainActivity.this, Redirect.class));
+                    finish();
                 } else {
                     Log.d(TAG, "onAuthStateChanged:signed_out");
                 }
@@ -101,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onSuccess(AuthResult authResult) {
                     progress.dismiss();
                     startActivity(new Intent(MainActivity.this, Redirect.class));
+                    finish();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override

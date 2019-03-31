@@ -37,10 +37,31 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/Password"
+                android:id="@+id/Name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_below="@+id/UserName"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_account_box_black_24dp" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Full Name"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/Name"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
@@ -82,12 +103,12 @@
                 android:layout_height="50dp"
                 android:layout_below="@+id/RePassword"
                 android:layout_marginTop="15dp"
-                android:id="@+id/SelectPrivilages"/>
+                android:id="@+id/SelectPrivileges"/>
             <Button
                 android:id="@+id/btnSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_below="@+id/SelectPrivilages"
+                android:layout_below="@+id/SelectPrivileges"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/rounded_corner"
